@@ -32,3 +32,6 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
+    - name: Set environment
+      run: |
+        export RUNNER_ALLOW_RUNASROOT="1"
