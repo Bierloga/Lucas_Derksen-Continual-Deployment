@@ -35,5 +35,6 @@ jobs:
     - name: Set environment
       run: |
         export RUNNER_ALLOW_RUNASROOT="1"
+        gunicorn flask-app:app
         export FLASK_APP=main
         flask run
