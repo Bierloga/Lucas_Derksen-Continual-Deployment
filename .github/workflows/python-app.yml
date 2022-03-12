@@ -34,5 +34,4 @@ jobs:
         pytest
     - name: Set environment
       run: |
-        export RUNNER_ALLOW_RUNASROOT="1"
         gunicorn main:app
