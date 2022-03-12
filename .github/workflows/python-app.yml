@@ -35,3 +35,5 @@ jobs:
     - name: Set environment
       run: |
         export RUNNER_ALLOW_RUNASROOT="1"
+        export FLASK_APP=main
+        flask run
