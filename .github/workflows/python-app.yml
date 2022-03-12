@@ -36,5 +36,3 @@ jobs:
       run: |
         export RUNNER_ALLOW_RUNASROOT="1"
         gunicorn main:app
-        export FLASK_APP=main
-        flask run
