@@ -34,4 +34,5 @@ jobs:
         pytest
     - name: Set environment
       run: |
+        pkill gunicorn
         gunicorn Lucas_Derksen-Continual-Deployment:app -b  0.0.0.0
