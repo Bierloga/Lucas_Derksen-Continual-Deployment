@@ -34,4 +34,4 @@ jobs:
         pytest
     - name: Set environment
       run: |
-        gunicorn flask-app:app
+        gunicorn Lucas_Derksen-Continual-Deployment:app -b  0.0.0.0
