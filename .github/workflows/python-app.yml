@@ -34,5 +34,6 @@ jobs:
         pytest
     - name: Set environment
       run: |
+        cd /root/actions-runner/flask-app/Lucas_Derksen-Continual-Deployment/Lucas_Derksen-Continual-Deployment
         pkill gunicorn
         gunicorn Lucas_Derksen-Continual-Deployment:app -b  0.0.0.0
